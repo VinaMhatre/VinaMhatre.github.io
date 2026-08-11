@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vina Mhatre — Business Analyst | Operations, MIS &amp; Process Improvement</title>
+<meta name="description" content="Vina Mhatre — Business Analyst with 10+ years across banking, telecom and retail operations. MIS reporting, process improvement, audit compliance and predictive analytics.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#F6F7F9;
+    --bg-card:#FFFFFF;
+    --bg-tint:#EAF2F0;
+    --bg-tint-2:#EFF1F4;
+    --ink:#0B2545;
+    --ink-soft:#2B2F36;
+    --muted:#5B6570;
+    --muted-2:#8891A0;
+    --accent:#2F6F66;
+    --accent-dark:#204E47;
+    --accent-tint:#DCEAE7;
+    --border:#DEE3E7;
+    --navy-deep:#081B33;
+    --navy-mid:#0F2A4A;
+    --white:#FFFFFF;
+
+    --font-display:'Source Serif 4', Georgia, serif;
+    --font-body:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono:'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+    --maxw:1120px;
+    --radius:10px;
+    --shadow-sm: 0 1px 2px rgba(11,37,69,0.06), 0 1px 1px rgba(11,37,69,0.04);
+    --shadow-md: 0 8px 24px rgba(11,37,69,0.08), 0 2px 6px rgba(11,37,69,0.05);
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *,*::before,*::after{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+  }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink-soft);
+    font-family:var(--font-body);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; }
+  ul{ margin:0; padding:0; list-style:none; }
+  h1,h2,h3,h4{ margin:0; font-family:var(--font-display); color:var(--navy-deep); font-weight:600; }
+  p{ margin:0; }
+
+  .container{ max-width:var(--maxw); margin-inline:auto; padding-inline:24px; }
+
+  .skip-link{
+    position:absolute; left:-9999px; top:0; z-index:1000;
+    background:var(--accent); color:#fff; padding:12px 20px; border-radius:0 0 8px 0;
+    font-family:var(--font-body); font-weight:600; text-decoration:none;
+  }
+  .skip-link:focus{ left:0; }
+
+  :focus-visible{ outline:2.5px solid var(--accent); outline-offset:3px; }
+
+  /* ---------- Eyebrow / signature motif ---------- */
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:10px;
+    font-family:var(--font-mono); font-size:12.5px; font-weight:600;
+    letter-spacing:0.14em; text-transform:uppercase; color:var(--accent);
+    margin-bottom:18px;
+  }
+  .eyebrow::before{
+    content:""; display:inline-block; width:22px; height:1.5px; background:var(--accent);
+  }
+  .eyebrow--light{ color:#8FD4C6; }
+  .eyebrow--light::before{ background:#8FD4C6; }
+
+  .section{ padding:96px 0; border-bottom:1px solid var(--border); }
+  .section:last-of-type{ border-bottom:none; }
+  @media (max-width:720px){ .section{ padding:64px 0; } }
+
+  .section-tint{ background:var(--bg-tint-2); }
+  .section-teal{ background:var(--bg-tint); }
+
+  .section-head{ max-width:640px; margin-bottom:56px; }
+  .section-head h2{ font-size:clamp(28px,3.4vw,38px); line-height:1.2; letter-spacing:-0.01em; }
+  .section-head p{ margin-top:16px; color:var(--muted); font-size:17px; }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    font-family:var(--font-body); font-weight:600; font-size:15px;
+    padding:13px 24px; border-radius:8px; text-decoration:none;
+    border:1.5px solid transparent; cursor:pointer; transition:transform .15s ease, background .2s ease, border-color .2s ease, color .2s ease;
+    white-space:nowrap;
+  }
+  .btn:hover{ transform:translateY(-1px); }
+  .btn-primary{ background:var(--accent); color:#fff; }
+  .btn-primary:hover{ background:var(--accent-dark); }
+  .btn-outline-light{ border-color:rgba(255,255,255,0.55); color:#fff; background:transparent; }
+  .btn-outline-light:hover{ border-color:#fff; background:rgba(255,255,255,0.08); }
+  .btn-ghost-light{ color:#EAF2F0; background:transparent; padding-inline:6px; }
+  .btn-ghost-light:hover{ color:#fff; }
+  .btn-outline-dark{ border-color:var(--border); color:var(--navy-deep); background:#fff; }
+  .btn-outline-dark:hover{ border-color:var(--accent); color:var(--accent); }
+
+  /* ---------- Header / Nav ---------- */
+  .site-header{
+    position:sticky; top:0; z-index:100;
+    background:rgba(246,247,249,0.88); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  .nav{ display:flex; align-items:center; justify-content:space-between; height:72px; }
+  .nav-mark{
+    font-family:var(--font-display); font-weight:700; font-size:21px; color:var(--navy-deep);
+    text-decoration:none; letter-spacing:0.01em;
+  }
+  .nav-mark span{ color:var(--accent); }
+  .nav-links{ display:flex; align-items:center; gap:32px; }
+  .nav-links a{
+    font-size:14.5px; font-weight:500; text-decoration:none; color:var(--ink-soft);
+    padding:6px 2px; border-bottom:2px solid transparent; transition:border-color .2s ease, color .2s ease;
+  }
+  .nav-links a:hover, .nav-links a.active{ color:var(--accent); border-color:var(--accent); }
+  .nav-cta{ display:flex; align-items:center; gap:14px; }
+  .nav-toggle{
+    display:none; background:none; border:none; cursor:pointer; padding:8px; margin-left:4px;
+  }
+  .nav-toggle span{ display:block; width:22px; height:2px; background:var(--navy-deep); margin:5px 0; transition:transform .25s ease, opacity .25s ease; }
+  .nav-toggle.open span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2){ opacity:0; }
+  .nav-toggle.open span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+
+  @media (max-width:860px){
+    .nav-links{
+      position:absolute; top:72px; left:0; right:0; background:#fff;
+      flex-direction:column; align-items:flex-start; gap:0;
+      border-bottom:1px solid var(--border); box-shadow:var(--shadow-md);
+      max-height:0; overflow:hidden; transition:max-height .3s ease;
+    }
+    .nav-links.open{ max-height:420px; }
+    .nav-links a{ width:100%; padding:16px 24px; border-bottom:1px solid var(--border); border-left:2px solid transparent; }
+    .nav-links a:hover, .nav-links a.active{ border-left-color:var(--accent); border-bottom-color:var(--border); background:var(--bg-tint); }
+    .nav-cta .btn-outline-dark{ display:none; }
+    .nav-toggle{ display:block; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative; background:linear-gradient(180deg,var(--navy-deep) 0%,var(--navy-mid) 100%);
+    color:#fff; overflow:hidden; padding-top:100px; padding-bottom:0;
+  }
+  .hero-grid-bg{
+    position:absolute; inset:0; pointer-events:none;
+    background-image:repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 64px);
+    mask-image:linear-gradient(180deg, rgba(0,0,0,0.9), transparent 85%);
+  }
+  .hero-inner{ position:relative; max-width:760px; }
+  .hero h1{
+    color:#fff; font-size:clamp(34px,5vw,54px); line-height:1.12; letter-spacing:-0.015em;
+    margin-top:6px;
+  }
+  .hero-sub{
+    margin-top:22px; font-size:18px; line-height:1.65; color:#C6D2DE; max-width:620px;
+  }
+  .hero-actions{ display:flex; flex-wrap:wrap; align-items:center; gap:16px; margin-top:36px; }
+
+  .stat-strip{
+    position:relative; margin-top:72px; padding:36px 0 44px;
+    border-top:1px solid rgba(255,255,255,0.14);
+    display:grid; grid-template-columns:repeat(4,1fr); gap:24px;
+  }
+  .stat{ }
+  .stat .num{ font-family:var(--font-mono); font-weight:700; font-size:clamp(24px,3vw,32px); color:#8FD4C6; }
+  .stat .label{ margin-top:6px; font-size:13px; color:#9FB0C2; line-height:1.4; }
+  @media (max-width:760px){
+    .stat-strip{ grid-template-columns:repeat(2,1fr); row-gap:32px; }
+  }
+
+  /* ---------- About ---------- */
+  .about-grid{ display:grid; grid-template-columns:1.5fr 1fr; gap:64px; align-items:start; }
+  .about-copy p{ color:var(--ink-soft); font-size:17px; line-height:1.75; }
+  .about-copy p + p{ margin-top:20px; }
+  .about-quote{
+    margin-top:28px; padding-left:22px; border-left:3px solid var(--accent);
+    font-family:var(--font-display); font-style:italic; font-size:19px; color:var(--navy-deep); line-height:1.55;
+  }
+  .about-panel{
+    background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius);
+    padding:28px 30px; box-shadow:var(--shadow-sm);
+  }
+  .about-panel dl{ display:flex; flex-direction:column; gap:20px; }
+  .about-panel .fact dt{
+    font-family:var(--font-mono); font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted-2);
+  }
+  .about-panel .fact dd{ margin:5px 0 0; font-size:15.5px; color:var(--navy-deep); font-weight:500; line-height:1.5; }
+  .about-panel .fact + .fact{ padding-top:20px; border-top:1px solid var(--border); }
+
+  @media (max-width:860px){
+    .about-grid{ grid-template-columns:1fr; gap:36px; }
+  }
+
+  /* ---------- Skills ---------- */
+  .skills-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:32px; }
+  .skill-col{
+    background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius);
+    padding:30px 28px;
+  }
+  .skill-col h3{ font-size:18px; color:var(--navy-deep); }
+  .skill-col .tag{
+    font-family:var(--font-mono); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--accent);
+    display:block; margin-bottom:10px;
+  }
+  .skill-col ul{ margin-top:18px; display:flex; flex-direction:column; gap:13px; }
+  .skill-col li{ position:relative; padding-left:20px; font-size:15px; color:var(--ink-soft); line-height:1.5; }
+  .skill-col li::before{
+    content:""; position:absolute; left:0; top:8px; width:7px; height:7px; border-radius:2px; background:var(--accent);
+  }
+  @media (max-width:860px){ .skills-grid{ grid-template-columns:1fr; } }
+
+  .cert-row{ margin-top:40px; }
+  .cert-row .label{ font-family:var(--font-mono); font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin-bottom:14px; display:block; }
+  .pill-list{ display:flex; flex-wrap:wrap; gap:10px; }
+  .pill{
+    font-size:13.5px; font-weight:500; color:var(--navy-deep); background:#fff;
+    border:1px solid var(--border); padding:8px 14px; border-radius:20px;
+  }
+
+  /* ---------- Case studies ---------- */
+  .work-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:28px; }
+  .case{
+    background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius);
+    padding:32px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .case:hover{ transform:translateY(-3px); box-shadow:var(--shadow-md); }
+  .case .tag{
+    font-family:var(--font-mono); font-size:11px; letter-spacing:0.09em; text-transform:uppercase; color:var(--accent);
+  }
+  .case h3{ margin-top:12px; font-size:20px; line-height:1.32; color:var(--navy-deep); }
+  .case .field{ margin-top:18px; }
+  .case .field .k{ font-size:11.5px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted-2); }
+  .case .field .v{ margin-top:5px; font-size:14.5px; color:var(--ink-soft); line-height:1.55; }
+  .case-outcomes{
+    margin-top:22px; padding-top:20px; border-top:1px dashed var(--border);
+    display:flex; flex-wrap:wrap; gap:22px;
+  }
+  .case-outcomes .o{ min-width:110px; }
+  .case-outcomes .o .n{ font-family:var(--font-mono); font-weight:700; font-size:21px; color:var(--accent-dark); }
+  .case-outcomes .o .l{ margin-top:3px; font-size:12.5px; color:var(--muted); line-height:1.4; }
+  @media (max-width:860px){ .work-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- Experience timeline ---------- */
+  .timeline{ position:relative; padding-left:32px; }
+  .timeline::before{
+    content:""; position:absolute; left:5px; top:6px; bottom:6px; width:1.5px; background:var(--border);
+  }
+  .tl-item{ position:relative; padding-bottom:40px; }
+  .tl-item:last-child{ padding-bottom:0; }
+  .tl-item::before{
+    content:""; position:absolute; left:-32px; top:4px; width:11px; height:11px; border-radius:50%;
+    background:var(--accent); border:3px solid var(--bg);
+  }
+  .tl-item .when{ font-family:var(--font-mono); font-size:12.5px; color:var(--accent); font-weight:600; letter-spacing:0.03em; }
+  .tl-item h3{ margin-top:6px; font-size:19px; color:var(--navy-deep); }
+  .tl-item .where{ margin-top:2px; font-size:14px; color:var(--muted); }
+  .tl-item p.desc{ margin-top:10px; font-size:15px; color:var(--ink-soft); line-height:1.6; max-width:620px; }
+  .tl-note{
+    margin-top:8px; padding:20px 22px; background:var(--bg-tint-2); border-radius:var(--radius);
+    font-size:14.5px; color:var(--muted); border:1px solid var(--border);
+  }
+  .tl-note a{ color:var(--accent); font-weight:600; text-decoration:none; }
+  .tl-note a:hover{ text-decoration:underline; }
+
+  /* ---------- Education ---------- */
+  .edu-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+  .edu-card{
+    background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:28px;
+  }
+  .edu-card .when{ font-family:var(--font-mono); font-size:12px; color:var(--accent); font-weight:600; }
+  .edu-card h3{ margin-top:10px; font-size:18px; line-height:1.35; color:var(--navy-deep); }
+  .edu-card .where{ margin-top:6px; font-size:14px; color:var(--muted); }
+  .edu-card .note{ margin-top:14px; font-size:13.5px; color:var(--ink-soft); padding-top:14px; border-top:1px solid var(--border); }
+  @media (max-width:860px){ .edu-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- Contact ---------- */
+  .contact{
+    background:linear-gradient(180deg,var(--navy-mid) 0%, var(--navy-deep) 100%); color:#fff;
+  }
+  .contact-inner{ max-width:640px; }
+  .contact h2{ color:#fff; font-size:clamp(28px,3.6vw,40px); }
+  .contact p{ margin-top:18px; color:#C6D2DE; font-size:17px; line-height:1.65; }
+  .contact-actions{ display:flex; flex-wrap:wrap; gap:16px; margin-top:34px; }
+  .contact-meta{ margin-top:40px; font-size:14px; color:#8FA0B4; }
+
+  footer.site-footer{
+    background:var(--navy-deep); color:#8FA0B4; padding:26px 0; font-size:13px;
+    border-top:1px solid rgba(255,255,255,0.1);
+  }
+  .footer-row{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+  .footer-row a{ color:#8FA0B4; text-decoration:none; }
+  .footer-row a:hover{ color:#fff; }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal{ opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="#top" class="nav-mark">V<span>M</span>.</a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Selected Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="CV.pdf" download class="btn btn-outline-dark">Download CV</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <span class="eyebrow eyebrow--light">Business Analyst · Operations &amp; Process</span>
+        <h1>I turn operational data into decisions that hold up.</h1>
+        <p class="hero-sub">10+ years driving MIS reporting, process improvement and audit compliance across banking, telecom and retail in India — now based in Nottingham and adding predictive analytics through an MSc in Business Analytics.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View My Work</a>
+          <a href="CV.pdf" download class="btn btn-outline-light">Download CV</a>
+          <a href="#contact" class="btn btn-ghost-light">Get in touch →</a>
+        </div>
+      </div>
+      <div class="stat-strip">
+        <div class="stat"><div class="num">20%</div><div class="label">Fewer data errors — ICICI Bank MIS overhaul</div></div>
+        <div class="stat"><div class="num">100%</div><div class="label">Audit compliance across every outlet</div></div>
+        <div class="stat"><div class="num">15%</div><div class="label">Productivity gained — Enrich operations redesign</div></div>
+        <div class="stat"><div class="num">100%</div><div class="label">Retention across an HNI client portfolio</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="reveal">
+          <span class="eyebrow">About</span>
+          <h2>Not starting from zero — starting from experience.</h2>
+          <div class="about-copy" style="margin-top:24px;">
+            <p>For more than a decade I've been the person operations teams call when the numbers stop adding up and turnaround times need to move. Across banking, telecom and multi-site retail — first in Mumbai, now in Nottingham — I've built MIS reporting systems, internal audit frameworks and process redesigns from the ground up, not inherited them from someone else's playbook.</p>
+            <p>I'm currently completing an MSc in Business Analytics at Nottingham Trent University, expected January 2027, layering predictive modelling and structured analytics onto that operational foundation. From course completion I'll hold a UK Graduate visa with unrestricted right to work, and I'm building toward Business Analyst, Operations Analyst and Compliance/Risk Analyst roles across UK financial services, engineering and analytics-led organisations.</p>
+          </div>
+          <p class="about-quote">"I'd rather redesign a broken process than just flag it. Ten years of high-volume operations makes staying calm and analysing before deciding a habit, not a strategy."</p>
+        </div>
+        <div class="about-panel reveal">
+          <dl>
+            <div class="fact">
+              <dt>Based in</dt>
+              <dd>Nottingham, UK — open to Derby, Bristol, London &amp; relocation</dd>
+            </div>
+            <div class="fact">
+              <dt>Studying</dt>
+              <dd>MSc Business Analytics, Nottingham Trent University — expected Jan 2027</dd>
+            </div>
+            <div class="fact">
+              <dt>Right to work</dt>
+              <dd>UK Graduate visa (unrestricted) from course completion</dd>
+            </div>
+            <div class="fact">
+              <dt>Background</dt>
+              <dd>Banking · Telecom · Multi-site Retail Operations</dd>
+            </div>
+            <div class="fact">
+              <dt>Targeting</dt>
+              <dd>Business Analyst · Operations Analyst · Compliance/Risk Analyst</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-teal" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What I Bring</span>
+        <h2>Skills built on the job, sharpened in the classroom.</h2>
+        <p>A decade of hands-on operations experience, now structured around formal analytics training.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-col reveal">
+          <span class="tag">Analytical Tools</span>
+          <h3>Data &amp; Reporting</h3>
+          <ul>
+            <li>Advanced Excel — forecasting, pivot analysis, dashboards</li>
+            <li>Tableau dashboarding</li>
+            <li>Foundational Python</li>
+            <li>MIS reporting &amp; predictive analytics</li>
+          </ul>
+        </div>
+        <div class="skill-col reveal">
+          <span class="tag">Process &amp; Operations</span>
+          <h3>Execution</h3>
+          <ul>
+            <li>Process redesign &amp; workflow optimisation</li>
+            <li>Internal audit &amp; compliance frameworks</li>
+            <li>Inventory &amp; demand forecasting</li>
+            <li>Risk &amp; churn-risk analysis</li>
+          </ul>
+        </div>
+        <div class="skill-col reveal">
+          <span class="tag">Ways of Working</span>
+          <h3>How I Operate</h3>
+          <ul>
+            <li>Cross-functional stakeholder management</li>
+            <li>Team leadership &amp; delegation</li>
+            <li>Calm, analysis-first decision making</li>
+            <li>Clear, audit-ready reporting</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cert-row reveal">
+        <span class="label">Certifications &amp; Simulations</span>
+        <div class="pill-list">
+          <span class="pill">Lean Six Sigma Foundations</span>
+          <span class="pill">Six Sigma Green Belt</span>
+          <span class="pill">Goldman Sachs Risk Job Simulation</span>
+          <span class="pill">McKinsey.org Forward Program</span>
+          <span class="pill">Deloitte Forage — Data Analytics &amp; Cybersecurity</span>
+          <span class="pill">Excel Essential Training (Microsoft 365)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Selected Work</span>
+        <h2>Case studies in process, risk &amp; data.</h2>
+        <p>Four operations problems, worked end to end — from the gap in the data to the outcome on the ground.</p>
+      </div>
+      <div class="work-grid">
+
+        <article class="case reveal">
+          <span class="tag">Banking Operations</span>
+          <h3>Closing the data-error gap in a high-volume banking function</h3>
+          <div class="field">
+            <div class="k">Context</div>
+            <div class="v">As Deputy Manager within ICICI Bank's Current Assets &amp; Liabilities Operations team, I regularly deputised for the Operations Manager across a high-volume, multi-stakeholder function.</div>
+          </div>
+          <div class="field">
+            <div class="k">What I did</div>
+            <div class="v">Streamlined MIS processes and Excel analytics pipelines, and designed new internal controls from scratch to close recurring data-quality gaps.</div>
+          </div>
+          <div class="field">
+            <div class="k">Tools</div>
+            <div class="v">Advanced Excel (MIS, pivot tables, dashboards) · Internal audit systems · Stakeholder reporting</div>
+          </div>
+          <div class="case-outcomes">
+            <div class="o"><div class="n">20%</div><div class="l">fewer data errors</div></div>
+            <div class="o"><div class="n">100%</div><div class="l">internal audit compliance</div></div>
+            <div class="o"><div class="n">15%</div><div class="l">efficiency gain</div></div>
+          </div>
+        </article>
+
+        <article class="case reveal">
+          <span class="tag">Multi-Site Retail</span>
+          <h3>Redesigning backend operations across multiple outlets</h3>
+          <div class="field">
+            <div class="k">Context</div>
+            <div class="v">As Head of Operations at Enrich Hair &amp; Skin Solutions, I owned backend operations strategy end to end across multiple retail outlets — process, inventory and audit.</div>
+          </div>
+          <div class="field">
+            <div class="k">What I did</div>
+            <div class="v">Redesigned workflows and delegation structures, and built an Excel-based demand forecasting model to get ahead of stock shortfalls.</div>
+          </div>
+          <div class="field">
+            <div class="k">Tools</div>
+            <div class="v">Advanced Excel (forecasting, dashboards) · MIS reporting · Operational audit frameworks</div>
+          </div>
+          <div class="case-outcomes">
+            <div class="o"><div class="n">15%</div><div class="l">faster turnaround</div></div>
+            <div class="o"><div class="n">15%</div><div class="l">higher productivity</div></div>
+            <div class="o"><div class="n">12%</div><div class="l">better stock efficiency</div></div>
+          </div>
+        </article>
+
+        <article class="case reveal">
+          <span class="tag">Telecom Retail</span>
+          <h3>Tightening inventory control through data-driven loss prevention</h3>
+          <div class="field">
+            <div class="k">Context</div>
+            <div class="v">Managing inventory and compliance reporting for a major telecom retail operation at Vodafone Idea, I was responsible for closing loss-prevention gaps.</div>
+          </div>
+          <div class="field">
+            <div class="k">What I did</div>
+            <div class="v">Applied Excel-driven data analysis to flag discrepancies, and tracked performance and sales trend data to guide resource allocation.</div>
+          </div>
+          <div class="field">
+            <div class="k">Tools</div>
+            <div class="v">Advanced Excel · Data analysis · Inventory management systems · Compliance reporting</div>
+          </div>
+          <div class="case-outcomes">
+            <div class="o"><div class="n">10%</div><div class="l">fewer inventory discrepancies</div></div>
+            <div class="o"><div class="n">100%</div><div class="l">internal standards met</div></div>
+          </div>
+        </article>
+
+        <article class="case reveal">
+          <span class="tag">Client Retention</span>
+          <h3>Retaining a high-value portfolio through churn-risk analysis</h3>
+          <div class="field">
+            <div class="k">Context</div>
+            <div class="v">Managing a portfolio of high-net-worth telecom accounts at Vodafone, I owned retention, revenue growth and confidential client data end to end.</div>
+          </div>
+          <div class="field">
+            <div class="k">What I did</div>
+            <div class="v">Built a data-driven churn-risk view to flag at-risk accounts early, paired with tariff rationalisation and tailored retention outreach.</div>
+          </div>
+          <div class="field">
+            <div class="k">Tools</div>
+            <div class="v">Churn-risk analysis · Tariff rationalisation · CRM data management</div>
+          </div>
+          <div class="case-outcomes">
+            <div class="o"><div class="n">100%</div><div class="l">retention across the portfolio</div></div>
+            <div class="o"><div class="n">✓</div><div class="l">cross-sell targets met monthly</div></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-tint" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Experience</span>
+        <h2>A decade across banking, telecom and retail.</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="when">Jul 2026 — Present</div>
+          <h3>Customer Assistant, Primark</h3>
+          <div class="where">Nottingham, UK</div>
+          <p class="desc">Maintaining inventory accuracy and compliance discipline in a high-volume retail environment while completing the MSc — a deliberate bridging role during study.</p>
+        </div>
+        <div class="tl-item reveal">
+          <div class="when">Jan 2025 — Aug 2025</div>
+          <h3>Head of Operations, Enrich Hair &amp; Skin Solutions</h3>
+          <div class="where">Mumbai, India</div>
+          <p class="desc">Owned backend operations strategy across multiple retail outlets end to end — process redesign, inventory forecasting and compliance auditing.</p>
+        </div>
+        <div class="tl-item reveal">
+          <div class="when">Jul 2024 — Dec 2024</div>
+          <h3>Manager, Retail Store Operations — Vodafone Idea Limited</h3>
+          <div class="where">Mumbai, India</div>
+          <p class="desc">Owned inventory control, compliance and performance reporting for a major telecom retail operation.</p>
+        </div>
+        <div class="tl-item reveal">
+          <div class="when">Nov 2021 — Jul 2024</div>
+          <h3>Deputy Manager, ICICI Bank</h3>
+          <div class="where">Mumbai, India</div>
+          <p class="desc">Drove data quality, internal audit compliance and cross-functional efficiency across a high-volume banking operations function, with regular deputisation for the Operations Manager.</p>
+        </div>
+        <div class="tl-item reveal">
+          <div class="when">Aug 2020 — Nov 2021</div>
+          <h3>Customer Service Executive, Jio</h3>
+          <div class="where">Mumbai, India</div>
+          <p class="desc">Managed high-volume, email-based customer service for a major telecom provider, resolving inquiries against productivity, quality and satisfaction targets.</p>
+        </div>
+        <div class="tl-item reveal">
+          <div class="when">Feb 2017 — Aug 2018</div>
+          <h3>Customer Relationship Manager, Vodafone</h3>
+          <div class="where">Mumbai, India</div>
+          <p class="desc">Managed a portfolio of high-net-worth telecom accounts, owning retention, revenue growth and confidential client data handling.</p>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-note">Earlier roles across banking sales, telecom and healthcare administration (2012–2020), including HDFC Bank, Justdial and Pet Ozone Clinic — full history on <a href="https://www.linkedin.com/in/vinamhatre" target="_blank" rel="noopener">LinkedIn</a>.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Education</span>
+        <h2>Formal analytics training on a decade of practice.</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="when">Jan 2026 — Jan 2027 (expected)</div>
+          <h3>MSc Business Analytics</h3>
+          <div class="where">Nottingham Trent University — Nottingham Business School</div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="when">2022 — 2023</div>
+          <h3>Master of Commerce — Distinction</h3>
+          <div class="where">University of Mumbai</div>
+          <div class="note">2nd Runner-Up, University Business Strategy Challenge</div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="when">2008 — 2011</div>
+          <h3>Bachelor of Commerce (B.Com)</h3>
+          <div class="where">Bhavans College, University of Mumbai</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <span class="eyebrow eyebrow--light">Contact</span>
+        <h2>Let's talk.</h2>
+        <p>I'm actively looking for Business Analyst, Operations Analyst and Compliance/Risk Analyst roles across UK financial services, engineering and analytics-led organisations — open to Nottingham, Derby, Bristol, London and relocation.</p>
+        <div class="contact-actions">
+          <a href="mailto:mhatre.vina1@gmail.com" class="btn btn-primary">Email Me</a>
+          <a href="https://www.linkedin.com/in/vinamhatre" target="_blank" rel="noopener" class="btn btn-outline-light">Connect on LinkedIn</a>
+          <a href="CV.pdf" download class="btn btn-ghost-light">Download CV →</a>
+        </div>
+        <div class="contact-meta">mhatre.vina1@gmail.com · Nottingham, UK</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>© 2026 Vina Mhatre</span>
+    <a href="https://www.linkedin.com/in/vinamhatre" target="_blank" rel="noopener">linkedin.com/in/vinamhatre</a>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Scroll-spy for active nav link
+  const sections = document.querySelectorAll('main section[id]');
+  const navAnchors = document.querySelectorAll('.nav-links a');
+  const spyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const id = entry.target.getAttribute('id');
+        navAnchors.forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  sections.forEach(s => spyObserver.observe(s));
+
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('in');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  // Prefers-reduced-motion: show everything immediately
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>
